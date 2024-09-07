@@ -1,0 +1,36 @@
+#app {
+    display: grid;
+    grid-template-columns: 31.25% 68.75%;
+    height: 100vh;
+    padding: 1.25rem;
+    overflow: hidden;
+}
+
+aside {
+    background: var(--bg-image) no-repeat center/cover;
+    border-radius: .75rem;
+    width: 25rem;
+
+    & .aside-container {
+        header {
+            margin-top: 2rem;
+            margin-inline: 2rem;
+            img {
+                width: 45.85px;
+                height: 48px;
+            }
+
+            & h1 {
+                font: var(--logo);
+                margin-block: 1rem .25rem;
+            }
+
+            & p {
+                color: var(--text-heading);
+                font: var(--body-md);
+                font-weight: 300;
+            }
+        }
+        
+    }
+}

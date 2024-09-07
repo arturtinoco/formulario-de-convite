@@ -1,4 +1,6 @@
 :root {
+    --bg-image: url(../assets/images/Background.png);
+
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
@@ -41,4 +43,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: var(--pink);
+}
+
+h2, h3 {
+    color: var(--text-heading);
 }
