@@ -60,6 +60,25 @@ h1 {
     color: var(--pink);
 }
 
-h2, h3 {
+legend, h2 {
     color: var(--text-heading);
+}
+
+h2 {
+    font: var(--heading-md);
+}
+
+legend {
+    font: var(--heading-sm);
+}
+
+.label-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(42%) sepia(14%) saturate(242%) hue-rotate(160deg) brightness(90%) contrast(86%); /*invert(62%) before, too dark*/
+}
+
+.frame {
+    justify-content: start;
+    gap: .75rem;
 }
