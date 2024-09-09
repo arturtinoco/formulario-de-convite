@@ -1,0 +1,5 @@
+label {
+    display: block;
+    color: var(--text-body);
+    font: var(--body-sm);
+}

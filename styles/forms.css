@@ -1,9 +1,10 @@
-
+@import url(fields/field-index.css);
 
 form {
     gap: 3rem;
 }
 
 fieldset {
+    gap: 1.5rem;
     border: none;
 }
