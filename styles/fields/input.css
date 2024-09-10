@@ -1,5 +1,18 @@
+input,
+textarea {
+    appearance: none;
+    width: 100%;
+    height: 3rem;
+    color: var(--input-placeholder);
+    font: var(--body-md);
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+}
+
 label {
     display: block;
     color: var(--text-body);
     font: var(--body-sm);
+    margin-bottom: .75rem;
 }

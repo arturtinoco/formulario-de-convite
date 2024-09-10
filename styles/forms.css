@@ -2,6 +2,7 @@
 
 form {
     gap: 3rem;
+    min-width: 35rem;
 }
 
 fieldset {
