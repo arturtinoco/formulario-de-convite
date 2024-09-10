@@ -1,14 +1,30 @@
+@keyframes slide-r {
+    from {
+        left: -100%;
+    } to {
+        left: 0%;
+    }
+}
+
+@keyframes slide-l {
+    from {
+        left: 100%;
+    } to {
+        left: 0%;
+    }
+}
+
 label + img {
     margin: 0;
 }
 
 .options {
+    position: relative;
     justify-content: center;
     align-items: center;
     gap: .25rem;
     grid-template-columns: 1fr 1fr;
-    min-width: 17rem;
-    width: 100%;
+    width: 17rem;
     height: 3rem;
     font: var(--body-md);
     background-color: var(--input-base);
@@ -16,19 +32,12 @@ label + img {
     border-radius: .5rem;
     padding: .25rem;
 
-    & .radio-image {
-        position: absolute;
-    }
-
     & .radio-inner:has(:checked) {
-        background-color: var(--shape-button);
-        border-radius: 5px;
-        height: 38px;
-
         & img {
             filter: invert(30%) sepia(73%) saturate(2813%) hue-rotate(182deg) brightness(101%) contrast(101%);/*invert(70%) before, too dark*/
         }
     }
+
 }
 
 
@@ -39,16 +48,34 @@ label + img {
     width: 100%;
     position: relative;
     padding: .25rem;
+
     & input {
         all: unset;
         position: absolute;
-        inset: 0;
+        z-index: 0;
+    }
+
+    & #inperson:checked {
+        background-color: var(--shape-button);
+        border-radius: 5px;
+        width: 129px;
+        height: 38px;
+        animation: slide-l forwards .5s;
+    }
+
+    & #online:checked {
+        background-color: var(--shape-button);
+        border-radius: 5px;
+        width: 129px;
+        height: 38px;
+        animation: slide-r backwards .5s;
     }
 
     & img {
         width: 1rem;
         height: 1rem;
         position: relative;
+        z-index: 1;
     }
 
     & label {
@@ -56,5 +83,6 @@ label + img {
         font-weight: 600;
         margin: 0;
         position: relative;
+        z-index: 1;
     }
 }
