@@ -45,6 +45,7 @@ main {
     padding: 5rem;
 
     & .main-container {
-        justify-content: start;
+        justify-content: center;
+        gap: 2.5rem;
     }
 }

@@ -5,3 +5,7 @@
 .grid-col {
     grid-auto-flow: column;
 }
+
+.gap1rem {
+    gap: 1rem;
+}

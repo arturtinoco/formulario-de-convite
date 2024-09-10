@@ -8,4 +8,8 @@ form {
 fieldset {
     gap: 1.5rem;
     border: none;
+
+    & .input-wrapper {
+        min-width: 17rem;
+    }
 }
