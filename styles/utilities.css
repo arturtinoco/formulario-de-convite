@@ -9,3 +9,47 @@
 .gap1rem {
     gap: 1rem;
 }
+
+#blue {
+    background-color: var(--brand-light);
+}
+
+#purple {
+    background-color: var(--purple);
+}
+
+#fuschia {
+    background-color: var(--fuschia);
+}
+
+#pink {
+    background-color: var(--pink);
+}
+
+#red {
+    background-color: var(--danger);
+}
+
+#orange {
+    background-color: var(--orange);
+}
+
+#yellow{
+    background-color: var(--yellow);
+}
+
+#lime {
+    background-color: var(--lime);
+}
+
+#green {
+    background-color: var(--green);
+}
+
+#cyan {
+    background-color: var(--cyan);
+}
+
+#navy {
+    background-color: var(--navy);
+}
