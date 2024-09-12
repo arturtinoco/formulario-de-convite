@@ -45,3 +45,15 @@
         border-color: var(--brand-light);
     }
 }
+
+.items {
+    grid-template-columns: repeat(4,1fr);
+    gap: .5rem;
+
+    & .card {
+        gap: .5rem;
+    }
+}
+
+/*536 x 309*/
+/*8.375rem*/

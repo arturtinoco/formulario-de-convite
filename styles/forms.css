@@ -15,3 +15,9 @@ fieldset {
         min-width: 17rem;
     }
 }
+
+#custom {
+    & .gallery {
+        gap: 1.75rem 1rem;
+    }
+}
