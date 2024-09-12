@@ -1,4 +1,10 @@
 input,
+label,
+textarea {
+    cursor: pointer;
+}
+
+input,
 textarea {
     appearance: none;
     width: 100%;
@@ -8,6 +14,13 @@ textarea {
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: .5rem;
+    outline: none;
+    
+    &:focus,
+    &:focus-within {
+        border-color: var(--brand-light);
+        color: var(--text-heading);
+    }
 }
 
 label {
