@@ -23,7 +23,7 @@ label + img {
     justify-content: center;
     align-items: center;
     gap: .25rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 17rem;
     height: 3rem;
     font: var(--body-md);
@@ -60,7 +60,7 @@ label + img {
         border-radius: 5px;
         width: 129px;
         height: 38px;
-        animation: slide-l forwards .5s;
+        animation: slide-l forwards .3s;
     }
 
     & #online:checked {
@@ -68,7 +68,7 @@ label + img {
         border-radius: 5px;
         width: 129px;
         height: 38px;
-        animation: slide-r backwards .5s;
+        animation: slide-r backwards .3s;
     }
 
     & img {
@@ -79,10 +79,13 @@ label + img {
     }
 
     & label {
-        color: var(--text-heading );
-        font-weight: 600;
         margin: 0;
         position: relative;
         z-index: 1;
+    }
+
+    & input:checked ~ label {
+        color: var(--text-heading );
+        font-weight: 600;
     }
 }
