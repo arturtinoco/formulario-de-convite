@@ -1,3 +1,21 @@
+@keyframes fade-in {
+    from {
+        background-color: var(--shape-button);
+    }
+    to {
+        background-color: var(--shape-hover);
+    }
+}
+
+@keyframes fade-out {
+    from {
+        background-color: var(--shape-hover);
+    }
+    to {
+        background-color: var(--shape-button);
+    }
+}
+
 .color-wrapper {
     justify-content: space-between;
 }
@@ -8,11 +26,22 @@
     background-color: var(--shape-button);
     width: 40px;
     height: 40px;
+    border: 2px solid transparent;
     border-radius: 50%;
+    animation: fade-out backwards .4s;
 
     & input {
         width: 28px;
         height: 28px;
+        border: none;
         border-radius: 50%;
+    }
+
+    &:hover {
+        animation: fade-in forwards .1s;
+    }
+
+    &:has(:checked) {
+        border-color: var(--brand-light);
     }
 }
