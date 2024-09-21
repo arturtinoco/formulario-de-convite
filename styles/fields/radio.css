@@ -24,7 +24,8 @@ label + img {
     align-items: center;
     gap: .25rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 17rem;
+    min-width: 17rem;
+    max-width: 17rem;
     height: 3rem;
     font: var(--body-md);
     background-color: var(--input-base);

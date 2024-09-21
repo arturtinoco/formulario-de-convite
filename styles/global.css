@@ -72,6 +72,15 @@ legend {
     font: var(--heading-sm);
 }
 
+.input-wrapper {
+    width: 35rem;
+}
+
+.input-wrapper-pair,
+.radio-wrapper {
+    width: 17rem;
+}
+
 .label-icon {
     width: 24px;
     height: 24px;
