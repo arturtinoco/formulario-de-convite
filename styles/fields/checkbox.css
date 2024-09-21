@@ -79,6 +79,7 @@
         }
 
         label {
+            color: var(--text-heading);
             text-align: center;
             position: relative;
             margin: 0;
