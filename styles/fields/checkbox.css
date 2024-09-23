@@ -95,3 +95,29 @@
     }
 }
 
+.toggle {
+    justify-content: start;
+    align-items: center;
+    gap: .75rem;
+    position: relative;
+
+    input {
+        width: 4rem;
+        height: 2rem;
+        border-radius: 999px;
+    }
+
+    & .style-switch {
+        background-color: var(--input-stroke);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        left: .25rem;
+    }
+
+    label {
+        cursor: default;
+        margin: 0;
+    }
+}
