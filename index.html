@@ -34,12 +34,24 @@
                         <div class="input-wrapper"> <!--text-->
                             <label for="title">Título</label>
                             <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+
+                            <div class="error-msg grid grid-col">
+                                <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta">
+
+                                <p>Campo obrigatório</p>
+                            </div>
                         </div>
 
                         <div class="grid grid-col gap1rem"> <!--date-->
                             <div class="input-wrapper-pair">
                                 <label for="init">Início</label>
-                                <input type="date" name="init" id="init" lang="pt-BR">
+                                <input type="date" name="init" id="init" lang="pt-BR" required>
+
+                                <div class="error-msg grid grid-col">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta">
+    
+                                    <p>Campo obrigatório</p>
+                                </div>
                             </div>
                             <div class="input-wrapper-pair">
                                 <label for="end">Fim</label>
@@ -69,14 +81,26 @@
 
                             <div class="input-wrapper-pair">
                                 <label for="address">Local</label>
-                                <input type="text" name="address" id="address" placeholder="Link ou endereço">
+                                <input type="text" name="address" id="address" placeholder="Link ou endereço" required>
+
+                                <div class="error-msg grid grid-col">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta">
+    
+                                    <p>Campo obrigatório</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="input-wrapper"> <!--textarea-->
                             <label for="details">Descrição</label>
-                            <textarea name="details" id="details" placeholder="Escreva sobre os detalhes do evento">
+                            <textarea name="details" id="details" placeholder="Escreva sobre os detalhes do evento" required>
                             </textarea>
+
+                            <div class="error-msg grid grid-col">
+                                <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta">
+
+                                <p>Campo obrigatório</p>
+                            </div>
                         </div>
                     </fieldset>
 
@@ -248,11 +272,47 @@
                                         <p id="loaded">image.jpg</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grid" id="contact">
+                        <div class="grid grid-col frame">
+                            <img src="assets/icons/contact.svg" alt="Ícone de informação de contato" class="label-icon">
+                            <legend>Dados para contato</legend>
+                        </div>
+
+                        <div class="input-wrapper"> <!--Name-->
+                            <label for="contact">Nome</label>
+                            <input type="text" name="contact" id="contact" placeholder="Nome completo" required>
+
+                            <div class="error-msg grid grid-col">
+                                <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta" class="red">
+
+                                <p>Campo obrigatório</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-col gap1rem"> <!--Email/Phone-->
+                            <div class="input-wrapper-pair">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
 
                                 <div class="error-msg grid grid-col">
                                     <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta" class="red">
+    
+                                    <p>Campo obrigatório</p>
+                                </div>
+                            </div>
 
-                                    <p>Formato de arquivo inválido!</p>
+                            <div class="input-wrapper-pair">
+                                <label for="phone">Telefone</label>
+                                <input type="text" name="phone" id="phone" placeholder="(99) 99999-9999" required>
+
+                                <div class="error-msg grid grid-col">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta" class="red">
+    
+                                    <p>Campo obrigatório</p>
                                 </div>
                             </div>
                         </div>

@@ -21,6 +21,30 @@ textarea {
         border-color: var(--brand-light);
         color: var(--text-heading);
     }
+
+    &:invalid {
+        border-color: var(--danger);
+    }
+
+    &[required] + .error-msg {
+        display: grid;
+        justify-content: start;
+        align-items: center;
+        gap: .5rem;
+        font: var(--body-xs);
+        color: var(--danger);
+        margin-top: .5rem;
+
+        & img {
+            width: 1rem;
+            height: 1rem;
+            filter: invert(66%) sepia(16%) saturate(2204%) hue-rotate(313deg) brightness(108%) contrast(102%);/*inver(46%) before, too light*/
+        }
+    }
+
+    &:valid + .error-msg {
+        display: none;
+    }
 }
 
 label {
@@ -31,7 +55,8 @@ label {
 }
 
 input[type="text"],
-input[type="date"] {
+input[type="date"],
+input[type="email"] {
     padding-inline: 1rem;
 }
 
@@ -89,24 +114,5 @@ textarea {
 
             & #loaded {display: block;}
         }
-    }
-
-    .error-msg {
-        display: none;
-        justify-content: start;
-        align-items: center;
-        gap: .5rem;
-        font: var(--body-xs);
-        color: var(--danger);
-
-        & img {
-            width: 1rem;
-            height: 1rem;
-            filter: invert(66%) sepia(16%) saturate(2204%) hue-rotate(313deg) brightness(108%) contrast(102%);/*inver(46%) before, too light*/
-        }
-    }
-
-    &:has(:invalid) {
-        & .error-msg {display: grid;}
     }
 }

@@ -13,6 +13,7 @@ fieldset {
 #about {
     & .input-wrapper {
         min-width: 17rem;
+        height: auto;
     }
 }
 
@@ -26,18 +27,22 @@ fieldset {
 
         & #color-list {
             grid-area: color-list;
+            height: auto;
         }
 
         & #theme {
             grid-area: themes;
+            height: auto;
         }
 
         & #switch {
             grid-area: style-switch;
+            height: auto;
         }
 
         & #upload {
             grid-area: upload;
+            height: auto;
         }
     }
 }

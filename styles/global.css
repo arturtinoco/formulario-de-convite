@@ -74,11 +74,13 @@ legend {
 
 .input-wrapper {
     width: 35rem;
+    height: 79px;
 }
 
 .input-wrapper-pair,
 .radio-wrapper {
     width: 17rem;
+    height: 79px;
 }
 
 .label-icon {
