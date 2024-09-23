@@ -16,7 +16,7 @@
     }
 }
 
-@keyframes slide-r {
+@keyframes radio-slide-r {
     from {
         left: -100%;
     } to {
@@ -24,10 +24,46 @@
     }
 }
 
-@keyframes slide-l {
+@keyframes radio-slide-l {
     from {
         left: 100%;
     } to {
         left: 0%;
+    }
+}
+
+@keyframes checkb-slide-r {
+    from {
+        left: calc(0% + .25rem);
+        background-color: var(--input-stroke);
+    } to {
+        left: calc(100% - 1.60rem);
+        background-color: var(--text-heading);
+    }
+}
+
+@keyframes checkb-slide-l {
+    from {
+        left: calc(100% - 1.60rem);
+        background-color: var(--text-heading);
+    } to {
+        left: calc(0% + .25rem);
+        background-color: var(--input-stroke);
+    }
+}
+
+@keyframes bg-light {
+    from {
+        background-color: var(--input-base);
+    } to {
+        background-color: var(--brand-light);
+    }
+}
+
+@keyframes bg-dark {
+    from {
+        background-color: var(--brand-light);
+    } to {
+        background-color: var(--input-base);
     }
 }

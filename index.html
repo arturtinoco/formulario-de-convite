@@ -217,14 +217,17 @@
                                 </div>
                             </div>
 
-                            <div class="input-wrapper grid"> <!--Style Switch-->
+                            <div class="input-wrapper grid" id="switch"> <!--Style Switch-->
                                 <label>Estilo</label>
 
                                 <div class="toggle grid grid-col">
-                                    <input type="checkbox" name="toggle-style" id="toggle-style">
-                                    <div class="style-switch"></div>
+                                    <div class="grid">
+                                        <input type="checkbox" name="toggle-style" id="toggle-style">
+                                        <div class="style-switch"></div>
+                                    </div>
 
-                                    <label for="toggle-style">Escuro</label>
+                                    <label for="toggle-style" id="dark">Escuro</label>
+                                    <label for="toggle-style" id="light">Claro</label>
                                 </div>
                             </div>
                         </div>

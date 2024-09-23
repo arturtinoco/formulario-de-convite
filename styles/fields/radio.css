@@ -47,7 +47,7 @@ label + img {
         border-radius: 5px;
         width: 129px;
         height: 38px;
-        animation: slide-l forwards .3s;
+        animation: radio-slide-l forwards .3s;
     }
 
     & #online:checked {
@@ -55,7 +55,7 @@ label + img {
         border-radius: 5px;
         width: 129px;
         height: 38px;
-        animation: slide-r backwards .3s;
+        animation: radio-slide-r backwards .3s;
     }
 
     & img {
