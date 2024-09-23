@@ -18,6 +18,26 @@ fieldset {
 
 #custom {
     & .gallery {
+        grid-template-areas: 
+        "color-list color-list"
+        "themes themes"
+        "style-switch upload";
         gap: 1.75rem 1rem;
+
+        & #color-list {
+            grid-area: color-list;
+        }
+
+        & #theme {
+            grid-area: themes;
+        }
+
+        & #switch {
+            grid-area: style-switch;
+        }
+
+        & #upload {
+            grid-area: upload;
+        }
     }
 }

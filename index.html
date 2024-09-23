@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="grid gallery">
-                            <div class="input-wrapper"> <!--Color list-->
+                            <div class="input-wrapper" id="color-list"> <!--Color list-->
                                 <label>Cor principal</label>
                                 <div class="grid grid-col color-wrapper">
                                     <div class="grid colors">
@@ -127,7 +127,7 @@
                                 </div>
                             </div>
 
-                            <div class="input-wrapper grid gap1rem"> <!--Theme-->
+                            <div class="input-wrapper grid gap1rem" id="theme"> <!--Theme-->
                                 <label>Tema do evento</label>
 
                                 <div class="grid items">
@@ -231,12 +231,12 @@
                                 </div>
                             </div>
 
-                            <div class="input-wrapper grid" id="banner"> <!--File Input-->
+                            <div class="input-wrapper grid" id="upload"> <!--File Input-->
                                 <label>Foto de capa</label>
 
                                 <div class="upload-box grid grid-col">
                                     <div class="file-input grid grid-col">
-                                        <input type="file" name="upload-pic" id="upload-pic">
+                                        <input type="file" name="upload-pic" id="upload-pic" checked>
 
                                         <img src="assets/icons/upload.svg" alt="Ícone de upload de arquivo">
 
@@ -245,7 +245,14 @@
 
                                     <div class="file-status">
                                         <p>Nenhum arquivo selecionado</p>
+                                        <p id="loaded">image.jpg</p>
                                     </div>
+                                </div>
+
+                                <div class="error-msg grid grid-col">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta" class="red">
+
+                                    <p>Formato de arquivo inválido!</p>
                                 </div>
                             </div>
                         </div>

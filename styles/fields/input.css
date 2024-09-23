@@ -39,3 +39,74 @@ textarea {
     height: 8.5rem;
     padding: 1rem;
 }
+
+#upload {
+    width: 100%;
+
+    .upload-box {
+        justify-content: start;
+        align-items: center;
+        gap: .75rem;
+        width: 23rem;
+        height: 3rem;
+
+        & .file-input {
+            align-items: center;
+            gap: .5rem;
+            width: 119px;
+            height: 2.5rem;
+            background-color: var(--shape-button);
+            border-radius: .5rem;
+            padding: .25rem .75rem .25rem .75rem;
+
+            & input {
+                display: none;
+            }
+
+            & img {
+                width: 1rem;
+                height: 1rem;
+                filter: invert(30%) sepia(73%) saturate(2813%) hue-rotate(182deg) brightness(101%) contrast(101%);
+            }
+
+            & label {
+                color: var(--text-heading);
+                margin: 0;
+            }
+        }
+
+        & .file-status {
+            p {
+                font: var(--body-md);
+                color: var(--input-placeholder);
+            }
+
+            & #loaded {display: none;}
+        }
+
+        &:active {
+            & p:first-of-type {display: none;}
+
+            & #loaded {display: block;}
+        }
+    }
+
+    .error-msg {
+        display: none;
+        justify-content: start;
+        align-items: center;
+        gap: .5rem;
+        font: var(--body-xs);
+        color: var(--danger);
+
+        & img {
+            width: 1rem;
+            height: 1rem;
+            filter: invert(66%) sepia(16%) saturate(2204%) hue-rotate(313deg) brightness(108%) contrast(102%);/*inver(46%) before, too light*/
+        }
+    }
+
+    &:has(:invalid) {
+        & .error-msg {display: grid;}
+    }
+}

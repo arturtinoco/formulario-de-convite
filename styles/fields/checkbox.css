@@ -83,6 +83,7 @@
     justify-content: start;
     align-items: center;
     width: 11rem;
+    max-height: 79px;
 
     & .toggle {
         justify-content: start;
