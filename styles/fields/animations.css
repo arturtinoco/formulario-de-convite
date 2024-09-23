@@ -1,0 +1,33 @@
+@keyframes fade-in {
+    from {
+        background-color: var(--shape-button);
+    }
+    to {
+        background-color: var(--shape-hover);
+    }
+}
+
+@keyframes fade-out {
+    from {
+        background-color: var(--shape-hover);
+    }
+    to {
+        background-color: var(--shape-button);
+    }
+}
+
+@keyframes slide-r {
+    from {
+        left: -100%;
+    } to {
+        left: 0%;
+    }
+}
+
+@keyframes slide-l {
+    from {
+        left: 100%;
+    } to {
+        left: 0%;
+    }
+}

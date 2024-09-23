@@ -1,20 +1,4 @@
-@keyframes fade-in {
-    from {
-        background-color: var(--shape-button);
-    }
-    to {
-        background-color: var(--shape-hover);
-    }
-}
-
-@keyframes fade-out {
-    from {
-        background-color: var(--shape-hover);
-    }
-    to {
-        background-color: var(--shape-button);
-    }
-}
+@import url(animations.css);
 
 .color-wrapper {
     justify-content: space-between;
@@ -99,6 +83,7 @@
     justify-content: start;
     align-items: center;
     gap: .75rem;
+    height: 3rem;
     position: relative;
 
     input {

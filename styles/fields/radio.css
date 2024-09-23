@@ -1,18 +1,4 @@
-@keyframes slide-r {
-    from {
-        left: -100%;
-    } to {
-        left: 0%;
-    }
-}
-
-@keyframes slide-l {
-    from {
-        left: 100%;
-    } to {
-        left: 0%;
-    }
-}
+@import url(animations.css);
 
 label + img {
     margin: 0;
