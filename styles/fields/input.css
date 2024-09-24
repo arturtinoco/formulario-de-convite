@@ -83,6 +83,7 @@ textarea {
             background-color: var(--shape-button);
             border-radius: .5rem;
             padding: .25rem .75rem .25rem .75rem;
+            animation: hover-fade-out backwards .1s;
 
             & input {
                 display: none;
@@ -97,6 +98,10 @@ textarea {
             & label {
                 color: var(--text-heading);
                 margin: 0;
+            }
+
+            &:hover {
+                animation: hover-fade-in forwards .2s;
             }
         }
 

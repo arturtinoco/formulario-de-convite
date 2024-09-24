@@ -99,3 +99,19 @@
         opacity: 0;
     }
 }
+
+@keyframes btn-fade-in {
+    from {
+        background-color: var(--brand-dark);
+    } to {
+        background-color: var(--brand-mid);
+    }
+}
+
+@keyframes btn-fade-out {
+    from {
+        background-color: var(--brand-mid);
+    } to {
+        background-color: var(--brand-dark);
+    }
+}

@@ -44,7 +44,7 @@
         position: relative;
         padding-inline: .25rem;
         padding-block: .25rem .5rem;
-        animation: fade-out backwards .4s;
+        animation: hover-fade-out backwards .4s;
 
         img {
             width: 7.875rem;
@@ -70,7 +70,7 @@
         }
 
         &:hover {
-            animation: fade-in forwards .1s;
+            animation: hover-fade-in forwards .1s;
         }
 
         &:has(:checked) {
