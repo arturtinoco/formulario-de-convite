@@ -2,6 +2,10 @@ input,
 label,
 textarea {
     cursor: pointer;
+
+    &:valid {
+        color: var(--text-heading);
+    }
 }
 
 input,
