@@ -1,4 +1,4 @@
-@keyframes fade-in {
+@keyframes hover-fade-in {
     from {
         background-color: var(--shape-button);
     }
@@ -7,7 +7,7 @@
     }
 }
 
-@keyframes fade-out {
+@keyframes hover-fade-out {
     from {
         background-color: var(--shape-hover);
     }
@@ -65,5 +65,37 @@
         background-color: var(--brand-light);
     } to {
         background-color: var(--input-base);
+    }
+}
+
+@keyframes border-fade-in {
+    from {
+        border-color: var(--input-stroke);
+    } to {
+        border-color: var(--brand-light);
+    }
+}
+
+@keyframes border-fade-out {
+    from {
+        border-color: var(--brand-light);
+    } to {
+        border-color: var(--input-stroke);
+    }
+}
+
+@keyframes icon-fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 100%;
+    }
+}
+
+@keyframes icon-fade-out {
+    from {
+        opacity: 100%;
+    } to {
+        opacity: 0;
     }
 }

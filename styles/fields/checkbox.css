@@ -12,7 +12,7 @@
     height: 40px;
     border: 2px solid transparent;
     border-radius: 50%;
-    animation: fade-out backwards .4s;
+    animation: hover-fade-out backwards .4s;
 
     & input {
         width: 28px;
@@ -22,7 +22,7 @@
     }
 
     &:hover {
-        animation: fade-in forwards .1s;
+        animation: hover-fade-in forwards .1s;
     }
 
     &:has(:checked) {
@@ -155,3 +155,92 @@
         }
     }
 }
+
+.extra {
+    justify-content: start;
+    align-items: center;
+    gap: .25rem;
+    width: 100%;
+
+    & .bottom-check {
+        justify-content: start;
+        align-items: center;
+        gap: .75rem;
+        padding-block: .25rem;
+        position: relative;
+
+        & .check-wrapper {
+            width: 1.25rem;
+            height: 1.25rem;
+            background-color: var(--input-base);
+            border-radius: .25rem;
+            position: relative;
+            z-index: 0;
+
+            & input {
+                width: 1.25rem;
+                height: 1.25rem;
+                background-color: var(--input-base);
+                border: 1px solid var(--input-stroke);
+                border-radius: .25rem;
+                position: relative;
+                z-index: 2;
+
+                &:checked {
+                    background-color: transparent;
+                    animation: border-fade-in forwards .2s;
+                }
+    
+                &:not(:checked) {
+                    animation: border-fade-out backwards .2s;
+                }
+            }
+            
+        }
+
+        & img {
+            width: 1rem;
+            height: 1rem;
+            filter: invert(30%) sepia(73%) saturate(4013%) hue-rotate(182deg) brightness(101%) contrast(101%);/*saturate(2813%) before, too weak*/
+            position: absolute;
+            z-index: 0;
+            inset: 0;
+            left: calc(50% - .5rem);
+            top: calc(50% - .5rem);
+            opacity: 0;
+            cursor: pointer;
+            
+        }
+
+        &:has(:checked) img {
+            z-index: 1;
+            animation: icon-fade-in forwards .2s;
+        }
+
+        &:not(:has(:checked)) > img {
+            z-index: 0;
+            animation: icon-fade-out backwards .2s;
+        }
+
+        & label {
+            margin: 0;
+            z-index: 0;
+        }
+
+        & a {
+            font-weight: 600;
+            color: var(--brand-light);
+            z-index: 0;
+        }
+    }
+
+}
+
+/* check */
+/*
+position: absolute;
+width: 16px;
+height: 16px;
+left: calc(50% - 16px/2);
+top: calc(50% - 16px/2);
+*/

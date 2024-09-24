@@ -46,3 +46,10 @@ fieldset {
         }
     }
 }
+
+footer {
+    gap: 3rem;
+    width: 35rem;
+    border-top: 1px solid var(--input-stroke);
+    padding-top: 2.5rem;
+}
