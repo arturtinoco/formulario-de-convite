@@ -46,7 +46,7 @@
 }
 
 body {
-    background-color: var(--shape-background);
+    background-color: black;
     color: var(--text-body);
     overflow: hidden;
 }
